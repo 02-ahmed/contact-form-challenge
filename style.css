@@ -1,0 +1,104 @@
+.attribution { font-size: 11px; text-align: center; }
+
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body{
+  box-sizing: border-box;
+  margin:0;
+  padding: 0;
+  font-size: 16px;
+  background-color: hsl(148, 38%, 91%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+}
+
+.form-container {
+  width: 250px;
+  height: 80%;
+  background-color: #fff;
+  margin: 40px;
+  padding: 10px 20px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+}
+
+.alert{
+  display: none;
+}
+
+.input-normal{
+  border-radius: 5px;
+  border: 1px solid grey;
+  height: 25px;
+  width: 250px;
+}
+.input-normal-query{
+  border-radius: 5px;
+  border: 1px solid grey;
+  height: 35px;
+  width: 250px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+  /* padding-left: 20px; */
+}
+.input-normal-query input {
+  margin-left: 20px;
+}
+
+p {
+  margin: 10px 0px;
+}
+
+.input-div {
+  margin-bottom: 20px;
+}
+
+.message-box {
+  height: 150px;
+  width: 250px;
+  border-radius: 10px;
+  border: 1px solid grey;
+  margin-bottom: 20px;;
+}
+
+.agreement {
+  display: flex;
+}
+
+button {
+  color: #fff;
+  background-color: hsl(169, 82%, 27%);
+  border: none;
+  width: 260px;
+  height: 40px;
+  border-radius: 10px;
+}
+
+.btn-div {
+  margin-top: 20px;
+}
+
+.query input {
+  margin-right: 10px;
+}
+
+/*small tablets*/
+@media screen and (min-width:620px) {
+
+}
+
+
+/*large tablets and laptops*/
+@media screen and (min-width:960px){
+
+}
+
+/*desktop*/
+@media screen and (min-width:1200px){
+
+}
