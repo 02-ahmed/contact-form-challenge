@@ -15,29 +15,41 @@
 <body>
   <div class="form-container">
     <h2>Contact Us</h2>
-    <p>First Name *</p>
-    <div class="first-name input-div"><input class="input-normal" type="text" required></div>
-    <div class="alert"><p>This field is required</p></div>
 
-    <p>Last Name *</p>
-    <div class="last-name input-div" ><input type="text" required class="input-normal"></div>
-    <div class="alert"><p>This field is required</p></div>
+    <div class="name-grid">
+      <div>
+        <p>First Name *</p>
+        <div class="first-name input-div"><input class="input-normal" type="text" required></div>
+        <div class="alert"><p>This field is required</p></div>
+      </div>
+      <div>
+        <p>Last Name *</p>
+        <div class="last-name input-div" ><input type="text" required class="input-normal"></div>
+        <div class="alert"><p>This field is required</p></div>
+      </div>
+      
+      
+    </div>
+    
 
     <p>Email Address *</p>
     <div class="email input-div"><input type="text" required class="input-normal"></div>
     <div class="alert"><p>Please enter a valid email address</p></div>
 
-
-    <p>Query Type *</p>
-    <div class="query input-div">
-      <div class="input-normal-query"><input type="radio">General Enquiry</div>
-      <div class="input-normal-query"><input type="radio">Support Request</div>
-      <div class="alert"><p>Please select a query type</p></div>
+    <div class="query-section">
+      <p class=>Query Type *</p>
+      <div class="query input-div">
+        <div class="input-normal-query general" tabindex="0"><input type="radio">General Enquiry</div>
+        <div class="input-normal-query" tabindex="0"><input type="radio">Support Request</div>
+        <div class="alert"><p>Please select a query type</p></div>
+      </div>
     </div>
+    
     
     <p>Message *</p>
     <div class="text-box">
-      <input type="text" class="message-box">
+      <textarea name="" id="" class="message-box"></textarea>
+      
       <div class="alert"><p>This field is required</p></div>
     </div>
 
