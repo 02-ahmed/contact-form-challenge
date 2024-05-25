@@ -17,49 +17,55 @@
     <h2>Contact Us</h2>
 
     <div class="name-grid">
-      <div>
+      <div id="first-name-div">
         <p>First Name *</p>
-        <div class="first-name input-div"><input class="input-normal" type="text" required></div>
-        <div class="alert"><p>This field is required</p></div>
+        <div class="first-name input-div"><input class="input-normal" type="text" id="first-name" required></div>
+        
       </div>
-      <div>
+      <div id="last-name-div">
         <p>Last Name *</p>
-        <div class="last-name input-div" ><input type="text" required class="input-normal"></div>
-        <div class="alert"><p>This field is required</p></div>
+        <div class="last-name input-div" ><input type="text" required class="input-normal" id="last-name"></div>
+        
       </div>
       
       
     </div>
     
-
-    <p>Email Address *</p>
-    <div class="email input-div"><input type="text" required class="input-normal"></div>
-    <div class="alert"><p>Please enter a valid email address</p></div>
+    <div id="email">
+      <p>Email Address *</p>
+      <div class="email input-div"><input type="text" required class="input-normal" id="email-input"></div>
+      <!-- <div class="alert"><p>Please enter a valid email address</p></div> -->
+    </div>
+    
 
     <div class="query-section">
       <p class=>Query Type *</p>
-      <div class="query input-div">
-        <div class="input-normal-query general" tabindex="0"><input type="radio">General Enquiry</div>
-        <div class="input-normal-query" tabindex="0"><input type="radio">Support Request</div>
-        <div class="alert"><p>Please select a query type</p></div>
+      <div class="query input-div" id="query-div">
+        <div class="input-normal-query general" tabindex="0" onclick="{makeActive()}"><input class="radio-btn" type="radio" name="query-type" value="general">General Enquiry</div>
+        <div class="input-normal-query" tabindex="0" onclick="{makeActive2()}"><input class="radio-btn2" type="radio" name="query-type" value="support">Support Request</div>
+        
       </div>
     </div>
     
     
     <p>Message *</p>
-    <div class="text-box">
-      <textarea name="" id="" class="message-box"></textarea>
+    <div class="text-box" id="message-div">
+      <textarea name="" id="message" class="message-box"></textarea>
       
-      <div class="alert"><p>This field is required</p></div>
+      
     </div>
-
-    <div class="agreement">
-      <input type="checkbox">
-      <p>I consent to being contacted by the team</p>
+    <div id="checkbox-div">
+      <div class="agreement">
+        <input type="checkbox" id="checkbox" class="checkbox">
+        <p>I consent to being contacted by the team</p>
+      </div>
+      
     </div>
-    <div class="alert"><p>To submit this form, please consent to being contacted</p></div>
+    
     <div class="btn-div">
-      <button>Submit</button>
+
+
+      <button class="btn" onclick="{checkInput()}">Submit</button>
     </div>
 
 
@@ -69,6 +75,8 @@
     Coded by <a href="#">Your Name Here</a>.
   </div>
 
+
+  <script src="main.js"></script>
   
 </body>
 </html>
