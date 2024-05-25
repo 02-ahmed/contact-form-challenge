@@ -70,3 +70,9 @@ function makeActive2(){
 }
 
 let checkbox = document.querySelector('.checkbox');
+
+function renderContactForm() {
+  let form = document.body;
+
+  form = ``;
+}
